@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./components/Header";
+import Login from "./components/Login";
 
 const ingredients = [
   {
@@ -26,6 +27,8 @@ function App() {
     <Router>
       <div className="App"></div>
       <Header />
+      <Login exact path ="/login" component ={Login} />
+      
      
     </Router>
   );
